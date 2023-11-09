@@ -314,3 +314,25 @@ body {
    radial-gradient(5px 5px at 275px 9px, rgba(255, 255, 255, 0.8) 50%, rgba(0, 0, 0, 0)), 
    ;
    background-size: 600px 600px;
+   animation: snow 3s linear infinite;
+   content: "";
+   }
+
+  .snow::after{
+    margin-left: -200px;
+    animation-duration: 6s;
+    animation-direction: reverse;
+    filter: blur(3px);
+  }
+
+ .snow:before{
+    animation-duration: 9s;
+    animation-direction: reverse;
+    margin-left: -300px;
+    opacity: 0.05;
+    filter: blur(3px);
+ }
+    @keyframes snow{
+	    to{
+               transform: TranslateY(600px);
+	    }
