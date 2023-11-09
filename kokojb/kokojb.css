@@ -214,4 +214,10 @@ body {
 	}
 }
 
+.snowflake {
+  position: fixed;
+  user-select: none;
+  z-index: 1000;
+  pointer-events: none;
+  width: 15px;
 }
