@@ -1,0 +1,184 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>KOKOJB</title>
+		  <link rel="icon" href="img/x-icon.jpg">
+	         <link rel="shortcut icon" type="image/x-icon" href="c">
+                 <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+	<!--<base href="{{base_url}}">--><base href=".">
+	<meta name="author" content="Nightless">
+	<meta name="description" content="The official site for the vNightless YouTube channel.">
+	<meta name="keywords" content="vNightless gaming, vNightless, Nightless, gaming, modding, terraria">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" -->
+	<script src="./retrieval129_files/f.txt"></script><script src="./retrieval129_files/f(1).txt"></script><script src="./retrieval129_files/f(2).txt" id="google_shimpl"></script><script src="./retrieval129_files/jquery.min.js.download"></script>
+	<script src="./retrieval129_files/firebase-app.js.download"></script>
+	<script src="./retrieval129_files/firebase-analytics.js.download"></script>
+
+
+	<!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script -->
+
+	<link rel="stylesheet" href="./retrieval129_files/css"> 
+
+
+<body style="padding: 0px 0px 120px;">
+	<br>
+	<center>
+		<img id="title" src="./retrieval129_files/welcome.png">
+		<br>
+		<br>
+	</center>
+	<div class="maindiv">
+		<br>
+
+		<input type="Button" button="" id="youtube" class="button main" onclick="youtubeButton();" value="Subscribe" <="" input="">
+
+		<input type="Button" button="" id="discord" class="button main" onclick="discordButton();" value="Discord Server" <="" input="">
+
+		<input type="Button" button="" id="twitter" class="button main" onclick="twitterButton();" value="Twitter" <="" input="">
+
+		<input type="Button" button="" id="instagram" class="button main" onclick="instagramButton();" value="Instagram" <="" input="">
+
+		<br>
+
+
+		<input type="Button" button="" id="AndroidMods" class="button main" onclick="tmButton();" value="AndroidMods" <="" input="">
+
+		
+
+		<!-- input type="Button" button id="merch" class="button main" onclick="comingsoon()" value="Merch" </input -->
+
+		<br><br><br><br>
+
+		<iframe id="yt_video" width="430" height="242" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; allowfullscreen" src="./Jbro129_files/TyYz_CZO8u4.html"></iframe>
+
+		<br><br><br><br>
+
+		<script>
+			
+		</script>
+		<!-- end ad -->
+
+		<br>
+		<br><br><br><br>
+
+		<b>
+			<div style="font-size:140%;color:#000000">
+				© 2023 KoKO LLC.
+			</div>
+		</b>
+
+	</div>
+
+<br>
+<br>
+<br>
+
+<script>
+	window.useTrailingSlashes = true;
+
+	var firebaseConfig = {
+		apiKey: "AIzaSyAug-9pc2tk7EiBwnebvFr6ImqvQDfwfO4",
+		authDomain: "jbro129-website.firebaseapp.com",
+		projectId: "jbro129-website",
+		storageBucket: "jbro129-website.appspot.com",
+		messagingSenderId: "517814951529",
+		appId: "1:517814951529:web:19a865038d69fe56f80cf8",
+		measurementId: "G-Y3K2DTVE8V"
+	}
+
+	firebase.initializeApp(firebaseConfig);
+
+	const analytics = firebase.analytics();
+	analytics.logEvent('index');
+
+	(adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-1059251413551012",
+		enable_page_level_ads: true
+	});
+
+	var channelID = "UC2KuN6dIDe4Y7rzg6Apm6fw";
+	$.getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.youtube.com%2Ffeeds%2Fvideos.xml%3Fchannel_id%3D' + channelID, function(data) {
+		var link = data.items[0].link;
+		var id = link.substr(link.indexOf("=") + 1);
+		$("#yt_video").attr("src", "https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
+	});
+
+	window.onload = function() {
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
+			document.getElementById("yt_video").width = "300"
+			document.getElementById("yt_video").height = "170"
+
+			document.getElementById("title").width = "340"
+			document.getElementById("title").height = "94"
+		}
+
+		document.getElementById("title").onclick = function() {
+			location.href = "syn129 site";
+		};
+	};
+
+	function youtubeButton() {
+		firebase.analytics().logEvent('youtube_button');
+		window.open('https://www.youtube.com/channel/UC2KuN6dIDe4Y7rzg6Apm6fw');
+	}
+
+	function discordButton() {
+		firebase.analytics().logEvent('discord_button');
+		window.open('https://discord.gg/unlock-all');
+	}
+
+	function twitterButton() {
+		firebase.analytics().logEvent('twitter_button');
+		window.open('https://twitter.com/TheLazeist');
+	}
+
+	function instagramButton() {
+		firebase.analytics().logEvent('instagram_button');
+		window.open('https://www.instagram.com/jbkoko_/');
+	}
+
+	function tmButton() {
+		firebase.analytics().logEvent('Dragonballbutton');
+		window.open('https://platinmods.com/');
+	}
+
+	function tmButton() {
+		firebase.analytics().logEvent('Dragonballbutton');
+		window.open('https://platinmods.com/');
+	}
+
+	function comingsoon() {
+		alert("Coming Soon...")
+	}
+
+</script><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_1_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./Jbro129_files/ads(1).html" data-google-container-id="a!2" data-load-complete="true"></iframe></div></ins>
+
+
+
+<ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" data-anchor-status="displayed" style="display: block; width: 100% !important; height: 95px !important; bottom: 0px; clear: none !important; float: none !important; left: 0px; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1; overflow: visible !important; padding: 0px !important; position: fixed; right: auto !important; top: auto !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647; background: rgb(250, 250, 250) !important;" data-ad-status="filled" data-anchor-shown="true"><div class="grippy-host"></div><div id="aswift_2_host" tabindex="0" title="Advertisement" aria-label="Advertisement" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;"><iframe id="aswift_2" name="aswift_2" style="width: 728px !important; height: 90px !important; display: block; margin: 0px auto;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" src="./retrieval129_files/zrt_lookup.html" data-google-container-id="a!3" data-google-query-id="CI3cwpar3_oCFWfz9QId14sG8Q" data-load-complete="true"></iframe></div></ins><iframe src="./retrieval129_files/aframe.html" width="0" height="0" style="display: none;"></iframe></body><iframe id="google_esf" name="google_esf" src="./retrieval129_files/zrt_lookup(1).html" style="display: none;"></iframe></htmlretrieval129_files<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Nightless</title>
+	
+	<!--<base href="{{base_url}}">--><base href=".">
+	<meta name="author" content="Nightless">
+	<meta name="description" content="The official site for the Nightless YouTube channel.">
+	<meta name="keywords" content="Nightless gaming, vNightless, Night, gaming, modding, terraria">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" -->
+	<script src="./retrieval129/f.txt"></script><script src="./retrieval129/f(1).txt"></script><script src="./retrieval129/f(2).txt" id="google_shimpl"></script><script src="./retrieval129/jquery.min.js.download"></script>
+	<script src="./Retrieval129/firebase-app.js.download"></script>
+	<script src="./Retrieval129/firebase-analytics.js.download"></script>
+
+
+	<!-- script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script -->
+
+	<link rel="stylesheet" href="./retrieval129_files/jbro.css">
+	<link rel="shortcut icon" href="https://recollecting.github.io/Nightless//image/j.ico" type="image/x-icon">
+
+<meta http-equiv="origin-trial" content="A+cA2PUOfIOKAdSDJOW5CP9ZlxONy1yu+hqAq72zUtKw4rLdihqRp6Nui/jUyCyegr+BUtH+C+Elv0ufn05yBQEAAACFeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A+zsdH3aNZT/bkjT8U/o5ACzyaeNYzTvtoVmwf/KOilfv39pxY2AIsOwhQJv+YnXp98i3TqrQibIVtMWs5UHjgoAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="AxceVEhIegcDEHqLXFQ2+vPKqzCppoJYsRCZ/BdfVnbM/sUUF2BXV8lwNosyYjvoxnTh2FC8cOlAnA5uULr/zAUAAACLeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXRhZ3NlcnZpY2VzLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjY5NzY2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZSwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><link rel="preload" href="./retrieval129_files/f(3).txt" as="script"><script type="text/javascript" src="./retrieval129_files/f(3).txt"></script><script src="./retrieval129_files/js" async=""></script><link rel="preload" href="./retrieval129_files/f(3).txt" as="script"><script type="text/javascript" src="./retrieval129_files/f(3).txt"></script></head>
+
