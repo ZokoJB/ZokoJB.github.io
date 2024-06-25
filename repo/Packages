@@ -31,8 +31,7 @@ Architecture: iphoneos-arm
 Version: 3.3
 Section: Tweaks
 Maintainer: xerusdesign
-Depends: mobilesubstrate, preferenceloader, firmware (>= 13), com.mrgcgamer.libgcuniversal
-Filename: ./debians/root/e45adef96c578a17b4247fd47a32a0ff.deb
+Filename: ./debs/root/e45adef96c578a17b4247fd47a32a0ff.deb
 Size: 14919164
 Description: Felicity Pro Theme
 Name: Felicity Pro 🌊
